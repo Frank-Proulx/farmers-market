@@ -312,7 +312,7 @@ const availableProduce = [
 
 const dateInfo = new Date();
 
-function Body(){
+function Body(props){
   return(
     <React.Fragment>
       <div id='bod'>
@@ -320,7 +320,11 @@ function Body(){
           marketSchedule = {marketSchedule[dateInfo.getUTCDay()]}
           availableProduce = {availableProduce[dateInfo.getUTCMonth()]}
         />
-        <Main />
+        <Main 
+          content = {props.mainContent}
+          marketSchedule = {marketSchedule}
+          availableProduce = {availableProduce}
+        />
       </div>
     </React.Fragment>
   );

@@ -1,15 +1,21 @@
 import React from "react";
 
-function Navbar(){
-  return (
-    <React.Fragment>
-      <div>
-        <button onClick={this.handleClick}>Home</button>
-        <button onClick={this.handleClick}>Daily Market Schedule</button>
-        <button onClick={this.handleClick}>Monthly Produce Schedule</button>
-      </div>
-    </React.Fragment>
-  );
+class Navbar extends React.Component{
+  constructor(props){
+    super(props);
+  }
+  render() {
+    const test = this.props.handleClick;
+    return (
+      <React.Fragment>
+        <div>
+          <button onClick={()=> test("home")}>Home</button>
+          <button onClick={()=> test("mSchedule")}>Daily Market Schedule</button>
+          <button onClick={()=> test("yProduce")}>Monthly Produce Schedule</button>
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 
 export default Navbar;

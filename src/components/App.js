@@ -1,6 +1,9 @@
 import React from "react";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Body from "./Body";
+// import Home from "./Home";
+// import YearlyProduce from "./YearlyProduce";
+// import MonthSchedule from "./MonthSchedule";
 
 class App extends React.Component{
   constructor(props){
@@ -8,34 +11,25 @@ class App extends React.Component{
     this.state = {
       visibleOnMain: "home"
     };
+    this.handleClick = this.handleClick.bind(this);  
   }
 
-  handleClick = () => {
-    this.setState(prevState => ({
-      formVisibleOnPage: !prevState.formVisibleOnPage
-    }));
-  }
+  handleClick = (value) => this.setState({ visibleOnMain: value});
+  
 
   render() {
-    let mainContent = null;
-    switch(this.state.visibleOnMain){
-      case "home":
-        mainContent = <Home />
-        break;
-      case "mSchedule":
-        mainContent = <MonthSchedule />
-        break;
-      case "yProduce":
-        mainContent = <YearProduce />
-        break;
-    }
-  
     return ( 
       <React.Fragment>
-        <Header />
-        <Body />
+        <Navbar 
+          handleClick={this.handleClick}
+        />
+        <Body
+          mainContent={this.state.visibleOnMain}
+        />
       </React.Fragment>
     );
   }
 }
+    
+  
 export default App;
