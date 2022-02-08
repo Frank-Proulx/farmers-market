@@ -310,14 +310,15 @@ const availableProduce = [
   }
 ];
 
+const dateInfo = new Date();
 
-
-function Body(props){
+function Body(){
   return(
     <React.Fragment>
       <div id='bod'>
         <TodayMonth 
-          marketSchedule = {marketSchedule[]}
+          marketSchedule = {marketSchedule[dateInfo.getUTCDay()]}
+          availableProduce = {availableProduce[dateInfo.getUTCMonth()]}
         />
         <Main />
       </div>

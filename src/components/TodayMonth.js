@@ -6,8 +6,8 @@ function TodayMonth(props) {
       <div>
         <h3>{props.availableProduce.month}</h3>
         <ul>
-          {props.availableProduce.selection.map((s)=>
-            <li>{s}</li>
+          {props.availableProduce.selection.map((s,index)=>
+            <li key={index}>{s}</li>
           )}
         </ul>
         <hr/>

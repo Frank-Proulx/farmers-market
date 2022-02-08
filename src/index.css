@@ -16,4 +16,10 @@ code {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr 2fr;
+  padding: 1em;
+}
+
+#bod > div {
+  border: solid black 5px;
+  padding: 0 1em;
 }
