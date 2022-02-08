@@ -310,14 +310,18 @@ const availableProduce = [
   }
 ];
 
+
+
 function Body(props){
   return(
     <React.Fragment>
       <div id='bod'>
-        <TodayMonth />
+        <TodayMonth 
+          marketSchedule = {marketSchedule[]}
+        />
         <Main />
       </div>
     </React.Fragment>
-  )
+  );
 }
 export default Body;
