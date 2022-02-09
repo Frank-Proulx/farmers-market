@@ -24,7 +24,8 @@ This website uses React to create a single page application that shows a farm's 
 
 * Create and/or navigate to the directory you would like to contain this project on your computer.
 * Initialize a git repository by typing git init in the terminal.
-* Type git clone https://github.com/Frank-Proulx/w6-currency-exchanger to clone the repository to your local machine.
+* Type git clone https://github.com/Frank-Proulx/farmers-market to clone the repository to your local machine.
+* cd into the new project directory.
 * Type npm install in the terminal to install all dependencies.  
 * Type npm run start into the terminal to start a server displaying the page.
 
