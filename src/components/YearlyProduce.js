@@ -4,8 +4,8 @@ import Home from "./Home";
 function YearlyProduce(props){
   return(
     <React.Fragment>
-      <div>
-        <h3>Yearly Produce</h3>
+      <div id="yearlyProduce">
+        <h3>2022 Monthly Produce Schedule</h3>
         <div id="yProduce">
         {props.availableProduce.map((e,index2)=>{
           return(

@@ -1,10 +1,14 @@
+
+
 body {
+  background-color: rgb(191, 240, 151);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 1.5em;
 }
 
 code {
@@ -19,11 +23,86 @@ code {
   padding: 1em;
 }
 
-#bod > div {
-  border: solid black 5px;
-  padding: 0 1em;
-}
 #yProduce {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+#main {
+  border-radius: 1em;
+  padding: 0;
+  background-image: url("./img/cage_farmer.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+} 
+
+#today-month {
+  border-radius: 1em;
+  padding: 0 1em;
+  background-color: rgba(16, 68, 0, 0.637);
+}
+#monthlySchedule > div {
+  background-color: rgba(16, 68, 0, 0.637);
+  color: rgba(251, 255, 195, 0.904);
+  position: relative;
+  height: 100%;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+#monthlySchedule {
+  padding: 0 1em;
+}
+#yearlyProduce {
+  padding: 0 1em;
+}
+#yearlyProduce > div {
+  background-color: rgba(16, 68, 0, 0.637);
+  color: rgba(251, 255, 195, 0.904);
+  position: relative;
+  height: 100%;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+#home {
+  border-radius: 1em;
+  background-color: rgba(8, 34, 0, 0.74);
+  color: rgba(251, 255, 195, 0.904);
+  height:100%;
+  width:100%;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 0 1em;
+}
+#navbar {
+  background-image: url("./img/cage_banner.jpg");
+  background-size: cover;
+  padding: 2em;
+  margin: 1em;
+}
+
+#navbar button {
+  background-image: linear-gradient(to right, #3CA55C 0%, #B5AC49  51%, #3CA55C  100%);
+  margin: 8px;
+  /* margin-top: 95%; */
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-weight: bold;            
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#navbar button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }

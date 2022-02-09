@@ -14,7 +14,7 @@ function Main(props){
   }
   return(
     <React.Fragment>
-      <div>
+      <div id="main">
         {thing}
       </div>
     </React.Fragment>
